@@ -1,8 +1,46 @@
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import Reactl, { useState } from 'react';
+import { Feather as Icon, FontAwesome } from '@expo/vector-icons';
+import { StyleSheet, Image, Text, View, TouchableOpacity, SafeAreaView } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { RectButton } from 'react-native-gesture-handler';
 
 const Detail = () => {
-  return <View/>
+  const navigation = useNavigation();
+
+  function handleNavigateBack() {
+    navigation.goBack();
+  }
+
+  return (
+    <SafeAreaView style={{ flex: 1 }}>
+      <View style={styles.container}>
+        <TouchableOpacity onPress={handleNavigateBack}>
+          <Icon name="arrow-left" size={20} color="#34cb79" />
+        </TouchableOpacity>
+        <Image style={styles.pointImage} source={{ uri: 'https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60' }} />
+
+        <Text style={styles.pointName}>Mercado x</Text>
+        <Text style={styles.pointItems}>Lâmpadas, Óleo de cozinha</Text>
+
+        <View style={styles.address}>
+          <Text style={styles.addressTitle}>Endereço</Text>
+          <Text style={styles.addressContent}>Ji-Paraná, RO</Text>
+        </View>
+      </View>
+
+      <View style={styles.footer}>
+        <RectButton style={styles.button} onPress={() => { }}>
+          <FontAwesome name="whatsapp" size={20} color="#FFF" />
+          <Text style={styles.buttonText}>Whatsapp</Text>
+        </RectButton>
+
+        <RectButton style={styles.button} onPress={() => { }}>
+          <Icon name="mail" size={20} color="#FFF" />
+          <Text style={styles.buttonText}>E-mail</Text>
+        </RectButton>
+      </View>
+    </SafeAreaView>
+  );
 };
 
 
@@ -39,7 +77,7 @@ const styles = StyleSheet.create({
   address: {
     marginTop: 32,
   },
-  
+
   addressTitle: {
     color: '#322153',
     fontFamily: 'Roboto_500Medium',
@@ -58,10 +96,11 @@ const styles = StyleSheet.create({
     borderColor: '#999',
     paddingVertical: 20,
     paddingHorizontal: 32,
+    paddingBottom: 0,
     flexDirection: 'row',
     justifyContent: 'space-between'
   },
-  
+
   button: {
     width: '48%',
     backgroundColor: '#34CB79',
