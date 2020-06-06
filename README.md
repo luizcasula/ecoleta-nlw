@@ -91,4 +91,4 @@ $ expo start
 
 
 # :page_with_curl: Licença
-
+Esse projeto está sobre a lincença MIT. Veja o arquivo [LICENSE](https://github.com/luizcasula/ecoleta-nlw/blob/master/LICENSE) para mais informações.
