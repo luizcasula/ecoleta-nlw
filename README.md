@@ -49,11 +49,42 @@
 
 # :hammer: Como usar
 
+```bash
+# Clone o repositório
+$ git clone https://github.com/luizcasula/ecoleta-nlw
+```
+
 ## :computer: Front-end
 
+```bash
+# Navegue até a pasta web
+$ cd web
+
+# Inicialize a página
+$ npm start
+```
 ## :gear: Back-end
 
+```bash
+# Navegue até a pasta server
+$ cd server
+
+# Inicialize o banco de dados
+$ npx knex migrate:latest —knexfile knexfile.ts migrate:latest
+
+# Inicialize o servidor
+$ yarn dev
+```
+
 ## :iphone: Mobile
+
+```bash
+# Navegue até a pasta mobile
+$ cd mobile
+
+# Inicialize o aplicativo
+$ expo start
+```
 
 # :handshake: Como contribuir
 
