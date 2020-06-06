@@ -31,9 +31,20 @@
 
 # :rocket: Tecnologias
 
--  [Expo](https://expo.io/)
--  [React-Native](https://facebook.github.io/react-native/)
+-  [Express](https://expressjs.com/)
+-  [Knex](http://knexjs.org/)
+-  [sqlite3](https://www.sqlite.org/index.html)
+-  [Multer](https://github.com/expressjs/multer)
+-  [Cors](https://www.npmjs.com/package/cors)
+-  [Celebrate](https://github.com/arb/celebrate)
+-  [Axios](https://github.com/axios/axios)
+-  [Leaflet](https://leafletjs.com/index.html)
+-  [React Dropzone](https://react-dropzone.js.org/)
 -  [React Navigation](https://reactnavigation.org/)
+-  [React-Native](https://facebook.github.io/react-native/)
+-  [Expo](https://expo.io/)
+-  [Expo Location](https://docs.expo.io/versions/latest/sdk/location/)
+-  [Expo Mail Composer](https://docs.expo.io/versions/latest/sdk/mail-composer/)
 
 
 # :hammer: Como usar
