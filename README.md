@@ -96,4 +96,4 @@ Esse projeto está sobre a lincença MIT. Veja o arquivo [LICENSE](https://githu
 
 ---
 
-Feito por Luiz Casula :wave: [Get in touch!](https://www.linkedin.com/in/luizcasula/)
+Feito por [Luiz Casula](https://www.linkedin.com/in/luiz-casula-44b7571aa/)
