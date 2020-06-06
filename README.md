@@ -19,7 +19,7 @@
 
 <p align="center">
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#information_source-como_usar">Como Usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#hammer-como_usar">Como Usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -31,10 +31,17 @@
 
 # :rocket: Tecnologias
 
+-  [Expo](https://expo.io/)
+-  [React-Native](https://facebook.github.io/react-native/)
+-  [React Navigation](https://reactnavigation.org/)
+
+
 # :hammer: Como usar
 
 ## :computer: Front-end
+
 ## :gear: Back-end
+
 ## :iphone: Mobile
 
 # :handshake: Como contribuir
