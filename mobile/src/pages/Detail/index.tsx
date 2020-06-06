@@ -12,16 +12,17 @@ interface RouteParams {
 
 interface Data {
   point: {
-    image: string,
-    name: string,
-    email: string,
-    city: string,
-    uf: string,
-    whatsapp: string
+    image: string;
+    image_url: string;
+    name: string;
+    email: string;
+    city: string;
+    uf: string;
+    whatsapp: string;
   },
   items: [{
-    title: string
-  }]
+    title: string;
+  }];
 }
 
 const Detail = () => {
@@ -30,9 +31,6 @@ const Detail = () => {
   const route = useRoute();
 
   const routeParams = route.params as RouteParams;
-
-  // const da = route.params as RouteParams;
-
 
   const [data, setData] = useState<Data>({} as Data);
 
@@ -58,7 +56,7 @@ const Detail = () => {
     });
   }
 
-  function handleWhatsapp(){
+  function handleWhatsapp() {
     Linking.openURL(`whatsapp://send?phone=${data.point.whatsapp}&text=Tenho Interesse sobre coleta de resíduos`);
   }
 
@@ -72,7 +70,7 @@ const Detail = () => {
         <TouchableOpacity onPress={handleNavigateBack}>
           <Icon name="arrow-left" size={20} color="#34cb79" />
         </TouchableOpacity>
-        <Image style={styles.pointImage} source={{ uri: data.point.image }} />
+        <Image style={styles.pointImage} source={{ uri: data.point.image_url }} />
 
         <Text style={styles.pointName}>{data.point.name}</Text>
         <Text style={styles.pointItems}>

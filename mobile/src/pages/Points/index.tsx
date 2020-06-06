@@ -9,22 +9,23 @@ import api from '../../services/api'
 
 
 interface Item {
-  id: number,
-  title: string,
-  image_url: string
+  id: number;
+  title: string;
+  image_url: string;
 }
 
 interface Point {
-  id: number,
-  name: string,
-  image: string,
-  latitude: number,
-  longitude: number,
+  id: number;
+  name: string;
+  image: string;
+  image_url: string;
+  latitude: number;
+  longitude: number;
 }
 
 interface RouteParams{
-  uf: string,
-  city: string
+  uf: string;
+  city: string;
 }
 
 
@@ -131,7 +132,7 @@ const Points = () => {
                   }}
                 >
                   <View style={styles.mapMarkerContainer}>
-                    <Image style={styles.mapMarkerImage} source={{ uri: point.image }} />
+                    <Image style={styles.mapMarkerImage} source={{ uri: point.image_url }} />
                     <Text style={styles.mapMarkerTitle}>{point.name}</Text>
                   </View>
                 </Marker>
