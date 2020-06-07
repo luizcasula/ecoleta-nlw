@@ -60,6 +60,9 @@ $ git clone https://github.com/luizcasula/ecoleta-nlw
 # Navegue até a pasta web
 $ cd web
 
+#Instale as dependencias
+$ yarn install
+
 # Inicialize a página
 $ npm start
 ```
@@ -68,6 +71,9 @@ $ npm start
 ```bash
 # Navegue até a pasta server
 $ cd server
+
+#Instale as dependencias
+$ yarn install
 
 # Inicialize o banco de dados
 $ npx knex migrate:latest —knexfile knexfile.ts migrate:latest
@@ -81,6 +87,9 @@ $ yarn dev
 ```bash
 # Navegue até a pasta mobile
 $ cd mobile
+
+#Instale as dependencias
+$ yarn install
 
 # Inicialize o aplicativo
 $ expo start
